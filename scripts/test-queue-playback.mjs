@@ -136,8 +136,18 @@ async function evaluate(expression) {
   });
   return result.result.value;
 }
+/**
+ * A value as a JavaScript literal to splice into code the WebView evaluates. JSON alone leaves
+ * `<`, `>`, `/` and the line separators U+2028 and U+2029 as they are; escaping them keeps a
+ * value from ending a string or a script early.
+ */
+const jsLiteral = (value) =>
+  JSON.stringify(value).replace(
+    /[<>/\u2028\u2029]/g,
+    (c) => `\\u${c.charCodeAt(0).toString(16).padStart(4, '0')}`,
+  );
 const invoke = (cmd, args = {}) =>
-  evaluate(`window.__TAURI_INTERNALS__.invoke(${JSON.stringify(cmd)}, ${JSON.stringify(args)})`);
+  evaluate(`window.__TAURI_INTERNALS__.invoke(${jsLiteral(cmd)}, ${jsLiteral(args)})`);
 const queue = () => invoke('load_queue');
 let lastStream = null;
 const media = async () => {
@@ -148,7 +158,7 @@ const media = async () => {
   return value;
 };
 const click = (selector) =>
-  evaluate(`(() => { const button=document.querySelector(${JSON.stringify(selector)});
+  evaluate(`(() => { const button=document.querySelector(${jsLiteral(selector)});
   if (!button || button.disabled) return false; button.click(); return true; })()`);
 const activeRow = '.leaf[aria-current="true"]';
 async function step(name, work) {
@@ -163,7 +173,7 @@ async function stopped() {
   assert(lastStream !== null, 'Observed a real stream before stopping');
   await until(
     () =>
-      evaluate(`window.__TAURI_INTERNALS__.invoke('stream_stats', {streamId: ${JSON.stringify(lastStream)}})
+      evaluate(`window.__TAURI_INTERNALS__.invoke('stream_stats', {streamId: ${jsLiteral(lastStream)}})
     .then(() => false, () => true)`),
     'backend stream unpublished',
   );
@@ -235,9 +245,11 @@ try {
   });
   ws.onmessage = (event) => {
     const message = JSON.parse(event.data);
-    if (message.id) {
-      pending.get(message.id)?.(message);
+    // Only replies to our own commands: a numeric id we issued, mapped to its resolver.
+    const resolve = typeof message.id === 'number' ? pending.get(message.id) : undefined;
+    if (typeof resolve === 'function') {
       pending.delete(message.id);
+      resolve(message);
     }
   };
   await until(
