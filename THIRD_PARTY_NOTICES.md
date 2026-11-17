@@ -27,12 +27,12 @@ added here then.
 
 ### Number of crates per license
 
-- MIT License: 588
+- MIT License: 603
 - Apache License 2.0: 23
 - ISC License: 21
 - Unicode License v3: 19
 - BSD 3-Clause "New" or "Revised" License: 11
-- Mozilla Public License 2.0: 5
+- Mozilla Public License 2.0: 7
 - zlib License: 4
 - BSD Zero Clause License: 2
 - BSD 2-Clause "Simplified" License: 2
@@ -302,8 +302,8 @@ Used by:
 
 Used by:
 
-- [librqbit-dht 9.0.1](https://github.com/ikatson/rqbit)
-- [librqbit-tracker-comms 9.0.1](https://github.com/ikatson/rqbit)
+- [librqbit-dht 9.1.0](https://github.com/ikatson/rqbit)
+- [librqbit-tracker-comms 9.1.0](https://github.com/ikatson/rqbit)
 
 ```text
 
@@ -1449,7 +1449,7 @@ limitations under the License.
 Used by:
 
 - [dpi 0.1.2](https://github.com/rust-windowing/winit)
-- [tao 0.37.1](https://github.com/tauri-apps/tao)
+- [tao 0.37.2](https://github.com/tauri-apps/tao)
 
 ```text
 Apache License
@@ -1659,18 +1659,18 @@ Apache License
 
 Used by:
 
-- [aws-lc-sys 0.46.0](https://github.com/aws/aws-lc-rs)
-- [librqbit-bencode 9.0.1](https://github.com/ikatson/rqbit)
-- [librqbit-buffers 9.0.1](https://crates.io/crates/librqbit-buffers)
-- [librqbit-clone-to-owned 9.0.1](https://crates.io/crates/librqbit-clone-to-owned)
-- [librqbit-core 9.0.1](https://github.com/ikatson/rqbit)
+- [aws-lc-sys 0.47.0](https://github.com/aws/aws-lc-rs)
+- [librqbit-bencode 9.1.0](https://github.com/ikatson/rqbit)
+- [librqbit-buffers 9.1.0](https://crates.io/crates/librqbit-buffers)
+- [librqbit-clone-to-owned 9.1.0](https://crates.io/crates/librqbit-clone-to-owned)
+- [librqbit-core 9.1.0](https://github.com/ikatson/rqbit)
 - [librqbit-dualstack-sockets 0.7.0](https://github.com/ikatson/librqbit-dualstack-sockets)
-- [librqbit-lsd 9.0.1](https://github.com/ikatson/rqbit)
-- [librqbit-peer-protocol 9.0.1](https://github.com/ikatson/rqbit)
-- [librqbit-sha1-wrapper 9.0.1](https://github.com/ikatson/rqbit)
-- [librqbit-upnp 9.0.1](https://github.com/ikatson/rqbit)
+- [librqbit-lsd 9.1.0](https://github.com/ikatson/rqbit)
+- [librqbit-peer-protocol 9.1.0](https://github.com/ikatson/rqbit)
+- [librqbit-sha1-wrapper 9.1.0](https://github.com/ikatson/rqbit)
+- [librqbit-upnp 9.1.0](https://github.com/ikatson/rqbit)
 - [librqbit-utp 0.7.0](https://github.com/ikatson/librqbit-utp)
-- [librqbit 9.0.1](https://github.com/ikatson/rqbit)
+- [librqbit 9.1.0](https://github.com/ikatson/rqbit)
 - [ryu 1.0.23](https://github.com/dtolnay/ryu)
 - [sync_wrapper 1.0.2](https://github.com/Actyx/sync_wrapper)
 
@@ -1815,7 +1815,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 Used by:
 
-- [encoding_rs 0.8.42](https://github.com/hsivonen/encoding_rs)
+- [encoding_rs 0.8.44](https://github.com/hsivonen/encoding_rs)
 
 ```text
 // Copyright © WHATWG (Apple, Google, Mozilla, Microsoft).
@@ -1919,7 +1919,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 Used by:
 
 - [alloc-no-stdlib 3.0.0](https://github.com/dropbox/rust-alloc-no-stdlib)
-- [brotli 9.0.0](https://github.com/dropbox/rust-brotli)
+- [brotli 9.1.3](https://github.com/dropbox/rust-brotli)
 
 ```text
 Copyright (c) 2016 Dropbox, Inc.
@@ -2020,7 +2020,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 Used by:
 
 - [alloc-stdlib 0.3.0](https://github.com/dropbox/rust-alloc-no-stdlib)
-- [aws-lc-sys 0.46.0](https://github.com/aws/aws-lc-rs)
+- [aws-lc-sys 0.47.0](https://github.com/aws/aws-lc-rs)
 - [boringtun 0.7.1](https://github.com/cloudflare/boringtun)
 - [curve25519-dalek 4.1.3](https://github.com/dalek-cryptography/curve25519-dalek/tree/main/curve25519-dalek)
 
@@ -2043,7 +2043,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 Used by:
 
-- [encoding_rs 0.8.42](https://github.com/hsivonen/encoding_rs)
+- [encoding_rs 0.8.44](https://github.com/hsivonen/encoding_rs)
 
 ```text
 Copyright © WHATWG (Apple, Google, Mozilla, Microsoft).
@@ -2079,7 +2079,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 Used by:
 
-- [webpki-root-certs 1.0.10](https://github.com/rustls/webpki-roots)
+- [webpki-root-certs 1.0.12](https://github.com/rustls/webpki-roots)
 
 ```text
 # Community Data License Agreement - Permissive - Version 2.0
@@ -2726,7 +2726,7 @@ CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 Used by:
 
-- [rustls-webpki 0.103.16](https://github.com/rustls/webpki)
+- [rustls-webpki 0.103.17](https://github.com/rustls/webpki)
 
 ```text
 Except as otherwise noted, this project is licensed under the following
@@ -2755,8 +2755,8 @@ third-party/chromium/LICENSE.
 
 Used by:
 
-- [aws-lc-rs 1.18.2](https://github.com/aws/aws-lc-rs)
-- [aws-lc-sys 0.46.0](https://github.com/aws/aws-lc-rs)
+- [aws-lc-rs 1.19.0](https://github.com/aws/aws-lc-rs)
+- [aws-lc-sys 0.47.0](https://github.com/aws/aws-lc-rs)
 
 ```text
 ISC License:
@@ -3072,7 +3072,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- [brotli 9.0.0](https://github.com/dropbox/rust-brotli)
+- [brotli 9.1.3](https://github.com/dropbox/rust-brotli)
 
 ```text
 Copyright (c) 2009, 2010, 2013-2016 by the Brotli Authors.
@@ -3105,7 +3105,9 @@ Used by:
 - [core-foundation 0.10.1](https://github.com/servo/core-foundation-rs)
 - [core-graphics-types 0.2.0](https://github.com/servo/core-foundation-rs)
 - [core-graphics 0.25.0](https://github.com/servo/core-foundation-rs)
+- [string_cache 0.11.0](https://github.com/servo/string-cache)
 - [string_cache 0.9.0](https://github.com/servo/string-cache)
+- [string_cache_codegen 0.11.2](https://github.com/servo/string-cache)
 - [string_cache_codegen 0.6.1](https://github.com/servo/string-cache)
 
 ```text
@@ -3243,24 +3245,24 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- [cc 1.8.0](https://github.com/rust-lang/cc-rs)
+- [cc 1.11.2](https://github.com/rust-lang/cc-rs)
 - [cfg-if 1.0.5](https://github.com/rust-lang/cfg-if)
 - [cmake 0.1.58](https://github.com/rust-lang/cmake-rs)
-- [find-msvc-tools 0.1.14](https://github.com/rust-lang/cc-rs)
+- [find-msvc-tools 0.1.15](https://github.com/rust-lang/cc-rs)
 - [futures-timer 3.0.4](https://github.com/async-rs/futures-timer)
 - [jobserver 0.1.35](https://github.com/rust-lang/jobserver-rs)
-- [js-sys 0.3.106](https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/js-sys)
-- [openssl-probe 0.2.1](https://github.com/rustls/openssl-probe)
+- [js-sys 0.3.107](https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/js-sys)
+- [openssl-probe 0.2.2](https://github.com/rustls/openssl-probe)
 - [pkg-config 0.3.34](https://github.com/rust-lang/pkg-config-rs)
 - [socket2 0.5.10](https://github.com/rust-lang/socket2)
 - [socket2 0.6.5](https://github.com/rust-lang/socket2)
 - [toml_datetime 0.6.3](https://github.com/toml-rs/toml)
-- [wasm-bindgen-futures 0.4.79](https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/futures)
-- [wasm-bindgen-macro-support 0.2.129](https://github.com/wasm-bindgen/wasm-bindgen/tree/main/crates/macro-support)
-- [wasm-bindgen-macro 0.2.129](https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/macro)
-- [wasm-bindgen-shared 0.2.129](https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/shared)
-- [wasm-bindgen 0.2.129](https://github.com/wasm-bindgen/wasm-bindgen)
-- [web-sys 0.3.106](https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/web-sys)
+- [wasm-bindgen-futures 0.4.80](https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/futures)
+- [wasm-bindgen-macro-support 0.2.130](https://github.com/wasm-bindgen/wasm-bindgen/tree/main/crates/macro-support)
+- [wasm-bindgen-macro 0.2.130](https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/macro)
+- [wasm-bindgen-shared 0.2.130](https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/shared)
+- [wasm-bindgen 0.2.130](https://github.com/wasm-bindgen/wasm-bindgen)
+- [web-sys 0.3.107](https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/web-sys)
 
 ```text
 Copyright (c) 2014 Alex Crichton
@@ -3295,7 +3297,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- [mio 1.2.4](https://github.com/tokio-rs/mio)
+- [mio 1.2.5](https://github.com/tokio-rs/mio)
 
 ```text
 Copyright (c) 2014 Carl Lerche and other MIO contributors
@@ -3324,7 +3326,7 @@ THE SOFTWARE.
 
 Used by:
 
-- [errno 0.3.14](https://github.com/lambda-fairy/rust-errno)
+- [errno 0.3.15](https://github.com/lambda-fairy/rust-errno)
 
 ```text
 Copyright (c) 2014 Chris Wong
@@ -3359,7 +3361,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- [mime 0.3.17](https://github.com/hyperium/mime)
+- [mime 0.3.18](https://github.com/hyperium/mime)
 
 ```text
 Copyright (c) 2014 Sean McArthur
@@ -3392,7 +3394,7 @@ Used by:
 - [bitflags 1.3.2](https://github.com/bitflags/bitflags)
 - [bitflags 2.13.2](https://github.com/bitflags/bitflags)
 - [glob 0.3.4](https://github.com/rust-lang/glob)
-- [log 0.4.34](https://github.com/rust-lang/log)
+- [log 0.4.35](https://github.com/rust-lang/log)
 - [num-bigint 0.4.8](https://github.com/rust-num/num-bigint)
 - [num-complex 0.2.4](https://github.com/rust-num/num-complex)
 - [num-complex 0.4.6](https://github.com/rust-num/num-complex)
@@ -3440,7 +3442,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- [uuid 1.28.0](https://github.com/uuid-rs/uuid)
+- [uuid 1.29.3](https://github.com/uuid-rs/uuid)
 
 ```text
 Copyright (c) 2014 The Rust Project Developers
@@ -3477,8 +3479,11 @@ DEALINGS IN THE SOFTWARE.
 Used by:
 
 - [html5ever 0.39.0](https://github.com/servo/html5ever)
+- [html5ever 0.40.1](https://github.com/servo/html5ever)
 - [markup5ever 0.39.0](https://github.com/servo/html5ever)
+- [markup5ever 0.40.0](https://github.com/servo/html5ever)
 - [web_atoms 0.2.6](https://github.com/servo/html5ever)
+- [web_atoms 0.3.0](https://github.com/servo/html5ever)
 
 ```text
 Copyright (c) 2014 The html5ever Project Developers
@@ -3513,8 +3518,8 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- [libsqlite3-sys 0.38.2](https://github.com/rusqlite/rusqlite)
-- [rusqlite 0.40.2](https://github.com/rusqlite/rusqlite)
+- [libsqlite3-sys 0.39.1](https://github.com/rusqlite/rusqlite)
+- [rusqlite 0.41.1](https://github.com/rusqlite/rusqlite)
 
 ```text
 Copyright (c) 2014 The rusqlite developers
@@ -3572,7 +3577,7 @@ SOFTWARE.
 
 Used by:
 
-- [flate2 1.1.10](https://github.com/rust-lang/flate2-rs)
+- [flate2 1.1.11](https://github.com/rust-lang/flate2-rs)
 
 ```text
 Copyright (c) 2014-2026 Alex Crichton
@@ -3704,7 +3709,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- [plist 1.10.1](https://github.com/ebarnard/rust-plist/)
+- [plist 1.10.4](https://github.com/ebarnard/rust-plist/)
 
 ```text
 Copyright (c) 2015 Edward Barnard
@@ -3991,7 +3996,6 @@ SOFTWARE.
 
 Used by:
 
-- [png 0.17.16](https://github.com/image-rs/image-png)
 - [png 0.18.1](https://github.com/image-rs/image-png)
 
 ```text
@@ -5298,7 +5302,7 @@ SOFTWARE.
 
 Used by:
 
-- [arc-swap 1.9.2](https://github.com/vorner/arc-swap)
+- [arc-swap 1.9.5](https://github.com/vorner/arc-swap)
 
 ```text
 Copyright (c) 2017 arc-swap developers
@@ -5649,7 +5653,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- [smallvec 1.16.3](https://github.com/servo/rust-smallvec)
+- [smallvec 1.16.5](https://github.com/servo/rust-smallvec)
 
 ```text
 Copyright (c) 2018 The Servo Project Developers
@@ -5910,7 +5914,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- [aes 0.9.3](https://github.com/RustCrypto/block-ciphers)
+- [aes 0.9.4](https://github.com/RustCrypto/block-ciphers)
 
 ```text
 Copyright (c) 2018-2024 The RustCrypto Project Developers
@@ -6358,7 +6362,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- [bumpalo 3.20.3](https://github.com/fitzgen/bumpalo)
+- [bumpalo 3.20.4](https://github.com/fitzgen/bumpalo)
 
 ```text
 Copyright (c) 2019 Nick Fitzgerald
@@ -6823,7 +6827,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- [memmap2 0.9.11](https://github.com/RazrFalcon/memmap2-rs)
+- [memmap2 0.9.12](https://github.com/RazrFalcon/memmap2-rs)
 
 ```text
 Copyright (c) 2020 Yevhenii Reizner
@@ -6894,7 +6898,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- [const-oid 0.10.2](https://github.com/RustCrypto/formats)
+- [const-oid 0.10.3](https://github.com/RustCrypto/formats)
 - [cpufeatures 0.3.1](https://github.com/RustCrypto/utils)
 
 ```text
@@ -7100,7 +7104,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- [inout 0.2.4](https://github.com/RustCrypto/utils)
+- [inout 0.2.6](https://github.com/RustCrypto/utils)
 
 ```text
 Copyright (c) 2022-2025 The RustCrypto Project Developers
@@ -7172,7 +7176,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- [rustls-pki-types 1.15.1](https://github.com/rustls/pki-types)
+- [rustls-pki-types 1.16.0](https://github.com/rustls/pki-types)
 
 ```text
 Copyright (c) 2023 Dirkjan Ochtman <dirkjan@ochtman.nl>
@@ -7236,7 +7240,9 @@ SOFTWARE.
 
 Used by:
 
+- [bit-set 0.11.1](https://github.com/contain-rs/bit-vec)
 - [bit-set 0.8.0](https://github.com/contain-rs/bit-set)
+- [bit-vec 0.10.2](https://github.com/contain-rs/bit-vec)
 - [bit-vec 0.8.0](https://github.com/contain-rs/bit-vec)
 
 ```text
@@ -7526,7 +7532,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- [ctutils 0.4.5](https://github.com/RustCrypto/utils)
+- [ctutils 0.4.8](https://github.com/RustCrypto/utils)
 
 ```text
 Copyright (c) 2025-2026 The RustCrypto Project Developers
@@ -7561,7 +7567,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- [zcheapstr 1.1.0](https://github.com/z-galaxy/zcheapstr/)
+- [zcheapstr 1.2.0](https://github.com/z-galaxy/zcheapstr/)
 
 ```text
 Copyright (c) 2026 Zeeshan Ali Khan & zcheapstr contributors
@@ -7597,15 +7603,15 @@ DEALINGS IN THE SOFTWARE.
 Used by:
 
 - [serde_spanned 0.6.9](https://github.com/toml-rs/toml)
-- [serde_spanned 1.1.2](https://github.com/toml-rs/toml)
+- [serde_spanned 1.1.3](https://github.com/toml-rs/toml)
 - [toml 0.8.2](https://github.com/toml-rs/toml)
-- [toml 1.1.8+spec-1.1.0](https://github.com/toml-rs/toml)
-- [toml_datetime 1.1.2+spec-1.1.0](https://github.com/toml-rs/toml)
+- [toml 1.2.1+spec-1.1.0](https://github.com/toml-rs/toml)
+- [toml_datetime 1.1.3+spec-1.1.0](https://github.com/toml-rs/toml)
 - [toml_edit 0.19.15](https://github.com/toml-rs/toml)
 - [toml_edit 0.20.2](https://github.com/toml-rs/toml)
-- [toml_edit 0.25.17+spec-1.1.0](https://github.com/toml-rs/toml)
+- [toml_edit 0.25.19+spec-1.1.0](https://github.com/toml-rs/toml)
 - [toml_parser 1.1.5+spec-1.1.0](https://github.com/toml-rs/toml)
-- [toml_writer 1.1.3+spec-1.1.0](https://github.com/toml-rs/toml)
+- [toml_writer 1.2.0+spec-1.1.0](https://github.com/toml-rs/toml)
 
 ```text
 Copyright (c) Individual contributors
@@ -7833,7 +7839,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 Used by:
 
-- [rand 0.10.3](https://github.com/rust-random/rand)
+- [rand 0.10.4](https://github.com/rust-random/rand)
 - [rand 0.8.8](https://github.com/rust-random/rand)
 - [rand 0.9.5](https://github.com/rust-random/rand)
 - [rand_chacha 0.9.0](https://github.com/rust-random/rand)
@@ -7958,9 +7964,10 @@ DEALINGS IN THE SOFTWARE.
 Used by:
 
 - [chardetng 1.0.0](https://github.com/hsivonen/chardetng)
-- [encoding_rs 0.8.42](https://github.com/hsivonen/encoding_rs)
+- [encoding_rs 0.8.44](https://github.com/hsivonen/encoding_rs)
 - [multiversion_no_op 1.0.0](https://github.com/hsivonen/multiversion_no_op)
-- [utf8_iter 1.0.4](https://github.com/hsivonen/utf8_iter)
+- [utf8_iter 1.1.0](https://github.com/hsivonen/utf8_iter)
+- [utf_types 1.0.0](https://github.com/hsivonen/utf_types)
 
 ```text
 Copyright Mozilla Foundation
@@ -8057,13 +8064,13 @@ SOFTWARE.
 
 Used by:
 
-- [tauri-build 2.7.3](https://github.com/tauri-apps/tauri)
-- [tauri-codegen 2.7.3](https://github.com/tauri-apps/tauri)
-- [tauri-macros 2.7.3](https://github.com/tauri-apps/tauri)
-- [tauri-runtime-wry 2.12.2](https://github.com/tauri-apps/tauri)
-- [tauri-runtime 2.12.2](https://github.com/tauri-apps/tauri)
-- [tauri-utils 2.10.2](https://github.com/tauri-apps/tauri)
-- [tauri 2.12.4](https://github.com/tauri-apps/tauri)
+- [tauri-build 2.7.5](https://github.com/tauri-apps/tauri)
+- [tauri-codegen 2.7.5](https://github.com/tauri-apps/tauri)
+- [tauri-macros 2.7.5](https://github.com/tauri-apps/tauri)
+- [tauri-runtime-wry 2.12.4](https://github.com/tauri-apps/tauri)
+- [tauri-runtime 2.12.3](https://github.com/tauri-apps/tauri)
+- [tauri-utils 2.10.3](https://github.com/tauri-apps/tauri)
+- [tauri 2.12.6](https://github.com/tauri-apps/tauri)
 
 ```text
 MIT License
@@ -8282,7 +8289,7 @@ SOFTWARE.
 
 Used by:
 
-- [ico 0.5.0](https://github.com/mdsteele/rust-ico)
+- [ico 0.6.0](https://github.com/mdsteele/rust-ico)
 
 ```text
 MIT License
@@ -8313,7 +8320,7 @@ SOFTWARE.
 
 Used by:
 
-- [crc32fast 1.5.2](https://github.com/srijs/rust-crc32fast)
+- [crc32fast 1.5.5](https://github.com/srijs/rust-crc32fast)
 
 ```text
 MIT License
@@ -8825,7 +8832,7 @@ SOFTWARE.
 
 Used by:
 
-- [spinning_top 0.3.0](https://github.com/rust-osdev/spinning_top)
+- [spinning_top 0.3.1](https://github.com/rust-osdev/spinning_top)
 
 ```text
 MIT License
@@ -8918,7 +8925,7 @@ SOFTWARE.
 
 Used by:
 
-- [wry 0.57.0](https://github.com/tauri-apps/wry)
+- [wry 0.57.2](https://github.com/tauri-apps/wry)
 
 ```text
 MIT License
@@ -9249,6 +9256,7 @@ SOFTWARE.
 Used by:
 
 - [dom_query 0.28.0](https://github.com/niklak/dom_query)
+- [dom_query 0.29.0](https://github.com/niklak/dom_query)
 
 ```text
 MIT License
@@ -9393,7 +9401,7 @@ Used by:
 - [async-stream-impl 0.3.6](https://github.com/tokio-rs/async-stream)
 - [async-stream 0.3.6](https://github.com/tokio-rs/async-stream)
 - [block2 0.6.2](https://github.com/madsmtm/objc2)
-- [brotli-decompressor 6.0.1](https://github.com/dropbox/rust-brotli-decompressor)
+- [brotli-decompressor 6.3.2](https://github.com/dropbox/rust-brotli-decompressor)
 - [cargo_toml 1.0.1](https://gitlab.com/lib.rs/cargo_toml)
 - [cesu8 1.1.0](https://github.com/emk/cesu8-rs)
 - [chrono 0.4.45](https://github.com/chronotope/chrono)
@@ -9496,7 +9504,7 @@ Used by:
 
 - [tokio-stream 0.1.19](https://github.com/tokio-rs/tokio)
 - [tokio-util 0.7.20](https://github.com/tokio-rs/tokio)
-- [tokio 1.53.3](https://github.com/tokio-rs/tokio)
+- [tokio 1.54.1](https://github.com/tokio-rs/tokio)
 
 ```text
 MIT License
@@ -9756,9 +9764,9 @@ Used by:
 - [adler2 2.0.1](https://github.com/oyvindln/adler2)
 - [anyhow 1.0.104](https://github.com/dtolnay/anyhow)
 - [async-channel 2.5.0](https://github.com/smol-rs/async-channel)
-- [async-executor 1.14.0](https://github.com/smol-rs/async-executor)
+- [async-executor 1.14.1](https://github.com/smol-rs/async-executor)
 - [async-io 2.6.0](https://github.com/smol-rs/async-io)
-- [async-lock 3.4.2](https://github.com/smol-rs/async-lock)
+- [async-lock 3.5.0](https://github.com/smol-rs/async-lock)
 - [async-process 2.5.0](https://github.com/smol-rs/async-process)
 - [async-signal 0.2.14](https://github.com/smol-rs/async-signal)
 - [async-task 4.7.1](https://github.com/smol-rs/async-task)
@@ -9774,13 +9782,13 @@ Used by:
 - [dtoa 1.0.11](https://github.com/dtolnay/dtoa)
 - [dyn-clone 1.0.20](https://github.com/dtolnay/dyn-clone)
 - [endi 1.1.1](https://github.com/zeenix/endi)
-- [erased-serde 0.4.10](https://github.com/dtolnay/erased-serde)
+- [erased-serde 0.4.11](https://github.com/dtolnay/erased-serde)
 - [event-listener-strategy 0.5.4](https://github.com/smol-rs/event-listener-strategy)
 - [event-listener 5.4.2](https://github.com/smol-rs/event-listener)
 - [fastrand 2.5.0](https://github.com/smol-rs/fastrand)
 - [futures-lite 2.6.1](https://github.com/smol-rs/futures-lite)
 - [hermit-abi 0.5.3](https://github.com/hermit-os/hermit-rs)
-- [itoa 1.0.18](https://github.com/dtolnay/itoa)
+- [itoa 1.0.19](https://github.com/dtolnay/itoa)
 - [lazy_static 1.5.1](https://github.com/rust-lang-nursery/lazy-static.rs)
 - [linux-raw-sys 0.12.1](https://github.com/sunfishcode/linux-raw-sys)
 - [num_enum 0.7.6](https://github.com/illicitonion/num_enum)
@@ -9797,7 +9805,7 @@ Used by:
 - [proc-macro-crate 3.5.0](https://github.com/bkchr/proc-macro-crate)
 - [proc-macro2 1.0.107](https://github.com/dtolnay/proc-macro2)
 - [quote 1.0.47](https://github.com/dtolnay/quote)
-- [rustix 1.1.5](https://github.com/bytecodealliance/rustix)
+- [rustix 1.1.6](https://github.com/bytecodealliance/rustix)
 - [rustversion 1.0.23](https://github.com/dtolnay/rustversion)
 - [semver 1.0.28](https://github.com/dtolnay/semver)
 - [serde-untagged 0.1.9](https://github.com/dtolnay/serde-untagged)
@@ -9810,10 +9818,11 @@ Used by:
 - [serde_path_to_error 0.1.20](https://github.com/dtolnay/path-to-error)
 - [serde_repr 0.1.21](https://github.com/dtolnay/serde-repr)
 - [servo_arc 0.4.3](https://github.com/servo/stylo)
+- [servo_arc 0.5.0](https://github.com/servo/stylo)
 - [simd_cesu8 1.2.0](https://github.com/seancroach/simd_cesu8)
 - [syn 1.0.109](https://github.com/dtolnay/syn)
 - [syn 2.0.119](https://github.com/dtolnay/syn)
-- [syn 3.0.9](https://github.com/dtolnay/syn)
+- [syn 3.0.10](https://github.com/dtolnay/syn)
 - [system-deps 6.2.2](https://github.com/gdesmott/system-deps)
 - [thiserror-impl 1.0.69](https://github.com/dtolnay/thiserror)
 - [thiserror-impl 2.0.21](https://github.com/dtolnay/thiserror)
@@ -9927,7 +9936,7 @@ DEALINGS IN THE SOFTWARE.
 Used by:
 
 - [winnow 0.5.40](https://github.com/winnow-rs/winnow)
-- [winnow 1.0.4](https://github.com/winnow-rs/winnow)
+- [winnow 1.0.5](https://github.com/winnow-rs/winnow)
 
 ```text
 Permission is hereby granted, free of charge, to any person obtaining
@@ -10031,7 +10040,8 @@ SOFTWARE.
 
 Used by:
 
-- [ctor 1.0.13](https://github.com/mmastrac/linktime)
+- [ctor 1.0.14](https://github.com/mmastrac/linktime)
+- [link-section 0.19.4](https://github.com/mmastrac/linktime)
 
 ```text
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -10205,10 +10215,15 @@ SOFTWARE.
 Used by:
 
 - [phf 0.13.1](https://github.com/rust-phf/rust-phf)
+- [phf 0.14.0](https://github.com/rust-phf/rust-phf)
 - [phf_codegen 0.13.1](https://github.com/rust-phf/rust-phf)
+- [phf_codegen 0.14.0](https://github.com/rust-phf/rust-phf)
 - [phf_generator 0.13.1](https://github.com/rust-phf/rust-phf)
+- [phf_generator 0.14.0](https://github.com/rust-phf/rust-phf)
 - [phf_macros 0.13.1](https://github.com/rust-phf/rust-phf)
+- [phf_macros 0.14.0](https://github.com/rust-phf/rust-phf)
 - [phf_shared 0.13.1](https://github.com/rust-phf/rust-phf)
+- [phf_shared 0.14.0](https://github.com/rust-phf/rust-phf)
 
 ```text
 The MIT License (MIT)
@@ -10336,7 +10351,7 @@ SOFTWARE.
 Used by:
 
 - [nix 0.30.1](https://github.com/nix-rust/nix)
-- [nix 0.31.3](https://github.com/nix-rust/nix)
+- [nix 0.31.4](https://github.com/nix-rust/nix)
 
 ```text
 The MIT License (MIT)
@@ -10556,7 +10571,7 @@ SOFTWARE.
 
 Used by:
 
-- [aws-lc-sys 0.46.0](https://github.com/aws/aws-lc-rs)
+- [aws-lc-sys 0.47.0](https://github.com/aws/aws-lc-rs)
 
 ```text
 The MIT License (MIT)
@@ -10840,8 +10855,8 @@ SOFTWARE.
 
 Used by:
 
-- [async-compression 0.4.51](https://github.com/Nullus157/async-compression)
-- [compression-codecs 0.4.46](https://github.com/Nullus157/async-compression)
+- [async-compression 0.4.52](https://github.com/Nullus157/async-compression)
+- [compression-codecs 0.4.47](https://github.com/Nullus157/async-compression)
 - [compression-core 0.4.34](https://github.com/Nullus157/async-compression)
 
 ```text
@@ -11006,7 +11021,7 @@ SOFTWARE.
 
 Used by:
 
-- [tauri-winres 0.3.6](https://github.com/tauri-apps/winres)
+- [tauri-winres 0.3.7](https://github.com/tauri-apps/winres)
 
 ```text
 The MIT License (MIT)
@@ -11672,6 +11687,7 @@ Used by:
 
 - [cssparser-macros 0.7.1](https://github.com/servo/rust-cssparser)
 - [cssparser 0.37.0](https://github.com/servo/rust-cssparser)
+- [cssparser 0.38.0](https://github.com/servo/rust-cssparser)
 
 ```text
 Mozilla Public License Version 2.0
@@ -12056,6 +12072,7 @@ Used by:
 
 - [option-ext 0.2.0](https://github.com/soc/option-ext.git)
 - [selectors 0.38.0](https://github.com/servo/stylo)
+- [selectors 0.41.0](https://github.com/servo/stylo)
 
 ```text
 Mozilla Public License Version 2.0
@@ -12487,24 +12504,24 @@ authorization of the copyright holder.
 
 Used by:
 
-- [icu_collections 2.3.0](https://github.com/unicode-org/icu4x)
-- [icu_locale_core 2.3.0](https://github.com/unicode-org/icu4x)
-- [icu_normalizer 2.3.0](https://github.com/unicode-org/icu4x)
-- [icu_normalizer_data 2.3.0](https://github.com/unicode-org/icu4x)
-- [icu_properties 2.3.0](https://github.com/unicode-org/icu4x)
-- [icu_properties_data 2.3.0](https://github.com/unicode-org/icu4x)
-- [icu_provider 2.3.1](https://github.com/unicode-org/icu4x)
+- [icu_collections 2.4.0](https://github.com/unicode-org/icu4x)
+- [icu_locale_core 2.4.0](https://github.com/unicode-org/icu4x)
+- [icu_normalizer 2.4.0](https://github.com/unicode-org/icu4x)
+- [icu_normalizer_data 2.4.0](https://github.com/unicode-org/icu4x)
+- [icu_properties 2.4.0](https://github.com/unicode-org/icu4x)
+- [icu_properties_data 2.4.0](https://github.com/unicode-org/icu4x)
+- [icu_provider 2.4.0](https://github.com/unicode-org/icu4x)
 - [litemap 0.8.3](https://github.com/unicode-org/icu4x)
 - [potential_utf 0.1.6](https://github.com/unicode-org/icu4x)
-- [tinystr 0.8.4](https://github.com/unicode-org/icu4x)
+- [tinystr 0.8.5](https://github.com/unicode-org/icu4x)
 - [writeable 0.6.4](https://github.com/unicode-org/icu4x)
 - [yoke-derive 0.8.4](https://github.com/unicode-org/icu4x)
-- [yoke 0.8.3](https://github.com/unicode-org/icu4x)
+- [yoke 0.8.4](https://github.com/unicode-org/icu4x)
 - [zerofrom-derive 0.1.8](https://github.com/unicode-org/icu4x)
 - [zerofrom 0.1.8](https://github.com/unicode-org/icu4x)
 - [zerotrie 0.2.5](https://github.com/unicode-org/icu4x)
-- [zerovec-derive 0.11.6](https://github.com/unicode-org/icu4x)
-- [zerovec 0.11.8](https://github.com/unicode-org/icu4x)
+- [zerovec-derive 0.11.7](https://github.com/unicode-org/icu4x)
+- [zerovec 0.11.9](https://github.com/unicode-org/icu4x)
 
 ```text
 UNICODE LICENSE V3

@@ -1,4 +1,4 @@
-Vendored from librqbit-tracker-comms 9.0.1 (https://github.com/ikatson/rqbit), by Igor Katson,
+Vendored from librqbit-tracker-comms 9.1.0 (https://github.com/ikatson/rqbit), by Igor Katson,
 Apache-2.0. The files are the published crate's, unchanged except as noted here and in the
 source.
 
