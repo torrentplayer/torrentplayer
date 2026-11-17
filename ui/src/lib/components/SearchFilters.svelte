@@ -28,7 +28,6 @@
     bestPickHidden: boolean;
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-useless-default-assignment -- $bindable() makes the prop bindable; it is not a default value
   let { filters = $bindable(), results, shown, bestPickHidden }: Props = $props();
 
   const options = $derived(facets(results));

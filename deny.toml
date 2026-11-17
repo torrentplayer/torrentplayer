@@ -24,6 +24,10 @@ ignore = [
   { id = "RUSTSEC-2026-0370", reason = "merged into zbus 6; via keyring's Linux store" },
   { id = "RUSTSEC-2026-0371", reason = "merged into zbus 6; via keyring's Linux store" },
   { id = "RUSTSEC-2026-0372", reason = "merged into zbus 6; via keyring's Linux store" },
+  # chrono is unmaintained (2026-11); no vulnerability is reported. Only the vendored
+  # librqbit-dht uses it, for the time each peer was last announced in the saved DHT state.
+  # Remove when upstream librqbit-dht drops chrono, or swap it for jiff in vendor/librqbit-dht.
+  { id = "RUSTSEC-2026-0543", reason = "unmaintained, no vulnerability; via librqbit-dht" },
 ]
 
 [licenses]

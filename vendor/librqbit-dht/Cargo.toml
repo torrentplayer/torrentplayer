@@ -12,7 +12,7 @@
 [package]
 edition = "2024"
 name = "librqbit-dht"
-version = "9.0.1"
+version = "9.1.0"
 build = false
 autolib = false
 autobins = false
@@ -42,12 +42,12 @@ version = "1.5"
 features = ["tokio-sleep"]
 
 [dependencies.bencode]
-version = "9.0.1"
+version = "9.1.0"
 default-features = false
 package = "librqbit-bencode"
 
 [dependencies.buffers]
-version = "9.0.1"
+version = "9.1.0"
 package = "librqbit-buffers"
 
 [dependencies.bytes]
@@ -58,7 +58,7 @@ version = "0.4"
 features = ["serde"]
 
 [dependencies.clone_to_owned]
-version = "9.0.1"
+version = "9.1.0"
 package = "librqbit-clone-to-owned"
 
 [dependencies.dashmap]
@@ -75,7 +75,7 @@ version = "2"
 version = "1.1"
 
 [dependencies.librqbit-core]
-version = "9.0.1"
+version = "9.1.0"
 default-features = false
 
 [dependencies.librqbit-dualstack-sockets]

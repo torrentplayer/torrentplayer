@@ -1,5 +1,9 @@
-Vendored from librqbit-dht 9.0.1 (https://github.com/ikatson/rqbit), by Igor Katson, Apache-2.0.
+Vendored from librqbit-dht 9.1.0 (https://github.com/ikatson/rqbit), by Igor Katson, Apache-2.0.
 The files are the published crate's, unchanged except as noted here and in the source.
+
+Upstream 9.1.0 adopted two of the changes below (skipping single-datagram receive errors, and
+one query per hop); this copy keeps its own versions of both, with upstream's WSAENETRESET case
+added. Its tests (`dht.rs`, `mod tests`) are upstream's, unchanged.
 
 Local change (`src/dht.rs`, marked "Modified for TorrentPlayer" and "Added for TorrentPlayer"): the UDP reader
 skips receive errors that concern a single datagram instead of shutting the whole node down.

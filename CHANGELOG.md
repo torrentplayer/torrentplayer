@@ -7,6 +7,14 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Security
+
+- The torrent engine (librqbit) is updated to 9.1, which fixes several ways a remote peer could
+  crash it: deeply nested bencode, an out-of-range metadata request, and a panic in the
+  incoming-connection listener.
+- On Windows, the DHT also keeps running after an ICMP "time exceeded" reply to one of its
+  queries (WSAENETRESET), as it already did for port-unreachable replies and oversized datagrams.
+
 ## [0.3.3] - 2026-10-28
 
 ### Fixed

@@ -49,16 +49,16 @@ keyring = "4.2"
 # rustls: avoids linking OpenSSL (via crypto-hash) on Linux. librqbit-upnp enables reqwest's
 # default TLS (rustls + aws-lc-rs) regardless, so aws-lc is built either way. The HTTP API and
 # web UI features are not needed; TorrentPlayer uses the library directly.
-librqbit = { version = "9.0.1", default-features = false, features = ["rust-tls"] }
+librqbit = { version = "9.1.0", default-features = false, features = ["rust-tls"] }
 # librqbit's tracker and metadata crates, used directly by torrentplayer-swarm (same versions as
 # librqbit 9, so nothing is built twice).
-librqbit-core = { version = "9.0.1", default-features = false, features = ["sha1-ring"] }
+librqbit-core = { version = "9.1.0", default-features = false, features = ["sha1-ring"] }
 # The DHT node librqbit uses (already built for it), for torrentplayer-swarm's own peer discovery.
-librqbit-dht = "9.0.1"
-librqbit-tracker-comms = "9.0.1"
+librqbit-dht = "9.1.0"
+librqbit-tracker-comms = "9.1.0"
 # UPnP IGD discovery (SSDP) for incoming peers in direct mode; the port mapping requests are
 # our own (torrentplayer-net incoming.rs). Already built for librqbit (same version).
-librqbit-upnp = "9.0.1"
+librqbit-upnp = "9.1.0"
 proptest = "1.7"
 # The system folder picker for choosing the download folder (Tauri v2 has none built in). GTK3 on
 # Linux, which Tauri already links, so no other toolkit or D-Bus client is added.
