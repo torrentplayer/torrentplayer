@@ -32,9 +32,11 @@ let sequence = 0;
 const pending = new Map();
 ws.onmessage = (e) => {
   const m = JSON.parse(e.data);
-  if (m.id) {
-    pending.get(m.id)?.(m);
+  // Only replies to our own commands: a numeric id we issued, mapped to its resolver.
+  const resolve = typeof m.id === 'number' ? pending.get(m.id) : undefined;
+  if (typeof resolve === 'function') {
     pending.delete(m.id);
+    resolve(m);
   }
 };
 async function evaluate(expression) {
