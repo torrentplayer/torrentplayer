@@ -1054,14 +1054,16 @@ impl core::fmt::Debug for ResponseOrError {
 
 /// Added for TorrentPlayer. Whether a receive error concerns one datagram rather than the socket.
 /// Windows reports an ICMP port-unreachable reply to an earlier send as a connection reset
-/// (WSAECONNRESET), and a datagram larger than the buffer as WSAEMSGSIZE (10040); any DHT
-/// node can cause either, and neither means the socket stopped working.
+/// (WSAECONNRESET), an ICMP time-exceeded reply as WSAENETRESET (10052), and a datagram larger
+/// than the buffer as WSAEMSGSIZE (10040); any DHT node can cause these, and none means the
+/// socket stopped working. Upstream 9.1.0 skips the same three Windows codes.
 fn datagram_error(e: &std::io::Error) -> bool {
     const WSAEMSGSIZE: i32 = 10040;
+    const WSAENETRESET: i32 = 10052;
     matches!(
         e.kind(),
         std::io::ErrorKind::ConnectionReset | std::io::ErrorKind::ConnectionRefused
-    ) || (cfg!(windows) && e.raw_os_error() == Some(WSAEMSGSIZE))
+    ) || (cfg!(windows) && matches!(e.raw_os_error(), Some(WSAEMSGSIZE | WSAENETRESET)))
 }
 
 enum DhtSocket {
@@ -1572,5 +1574,86 @@ impl FromSocketAddr for SocketAddrV6 {
             SocketAddr::V6(a) => Some(a),
             _ => None,
         }
+    }
+}
+
+// From upstream 9.1.0, unchanged.
+#[cfg(test)]
+mod tests {
+    use std::{
+        net::{Ipv4Addr, SocketAddr},
+        time::Duration,
+    };
+
+    use bencode::ByteBufOwned;
+    use tokio::net::UdpSocket;
+
+    use super::{DhtConfig, DhtState};
+    use crate::{
+        Dht,
+        bprotocol::{self, MessageKind},
+    };
+
+    async fn start_dht(bootstrap_addr: SocketAddr) -> Dht {
+        DhtState::with_config(DhtConfig {
+            listen_addr: Some((Ipv4Addr::LOCALHOST, 0).into()),
+            bootstrap_addrs: Some(vec![bootstrap_addr.to_string()]),
+            ..Default::default()
+        })
+        .await
+        .unwrap()
+    }
+
+    async fn assert_answers_ping(dht: &Dht) {
+        let client = UdpSocket::bind((Ipv4Addr::LOCALHOST, 0)).await.unwrap();
+        client
+            .send_to(
+                b"d1:ad2:id20:abcdefghij0123456789e1:q4:ping1:t2:aa1:y1:qe",
+                dht.listen_addr(),
+            )
+            .await
+            .unwrap();
+        let mut buf = [0u8; 1024];
+        let len = tokio::time::timeout(Duration::from_secs(5), async {
+            loop {
+                match client.recv_from(&mut buf).await {
+                    Ok((len, addr)) if addr == dht.listen_addr() => return len,
+                    _ => continue,
+                }
+            }
+        })
+        .await
+        .expect("the DHT stopped answering");
+        let response = bprotocol::deserialize_message::<ByteBufOwned>(&buf[..len]).unwrap();
+        assert!(matches!(response.kind, MessageKind::Response(_)));
+    }
+
+    // On Windows, an ICMP port unreachable that comes back for an earlier send_to makes the next
+    // recv_from on the same UDP socket fail with WSAECONNRESET (os error 10054).
+    #[tokio::test]
+    async fn test_dht_answers_after_icmp_port_unreachable() {
+        // Nothing listens on this port once the socket is dropped.
+        let closed = std::net::UdpSocket::bind((Ipv4Addr::LOCALHOST, 0))
+            .unwrap()
+            .local_addr()
+            .unwrap();
+        let dht = start_dht(closed).await;
+
+        // Let the bootstrap query reach the closed port and the ICMP error come back.
+        tokio::time::sleep(Duration::from_millis(500)).await;
+        assert_answers_ping(&dht).await;
+    }
+
+    // On Windows, a datagram longer than the receive buffer makes recv_from fail with
+    // WSAEMSGSIZE (os error 10040).
+    #[tokio::test]
+    async fn test_dht_answers_after_oversized_datagram() {
+        // Stays open, so the bootstrap query gets neither an answer nor an ICMP error.
+        let silent = UdpSocket::bind((Ipv4Addr::LOCALHOST, 0)).await.unwrap();
+        let dht = start_dht(silent.local_addr().unwrap()).await;
+
+        // Some platforms refuse to send a datagram this large, which is fine.
+        let _ = silent.send_to(&[0u8; 20_000], dht.listen_addr()).await;
+        assert_answers_ping(&dht).await;
     }
 }
